@@ -1,0 +1,19 @@
+/* Add your custom CSS rules for the confirmation page */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* You can add more CSS rules to style other elements as needed */

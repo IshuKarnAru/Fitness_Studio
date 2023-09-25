@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Details</title>
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
+    <section class="payment-details">
+      <h1>Payment Details</h1>
+      <!-- Add your payment form or content here -->
+      <form action="payment" method="POST">
+        <!-- Payment form fields go here -->
+        <div class="inputBox">
+          <input type="text" name="card_number" placeholder="Card Number" />
+          <input
+            type="text"
+            name="card_holder"
+            placeholder="Card Holder Name"
+          />
+        </div>
+        <div class="inputBox">
+          <input
+            type="date"
+            name="expiration_date"
+            placeholder="Expiration Date"
+          />
+          <input type="text" name="cvv" placeholder="CVV" />
+        </div>
+        <input type="submit" class="btn" value="Submit Payment" />
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+      Created by <a href="#">Hritik Ranjan Sharma</a> | All rights reserved.
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          // Get a reference to the payment form
+          const paymentForm = document.querySelector("form");
+      
+          // Add a submit event listener to the form
+          paymentForm.addEventListener("submit", function(event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+      
+            // Redirect to the confirmation page
+            window.location.href = "confirmation.html"; // Replace with the actual URL
+          });
+        });
+      </script>
+      
+  </body>
+</html>

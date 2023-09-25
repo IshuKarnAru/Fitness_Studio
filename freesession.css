@@ -1,0 +1,82 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Center the form vertically and horizontally */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Style the form container */
+.form-container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Style the form header */
+.form-header {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the form elements */
+.form-element {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-element label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-element input[type="text"],
+.form-element input[type="number"],
+.form-element select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.form-element select {
+    height: 40px;
+}
+
+/* Style the submit button */
+.form-submit {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.form-submit:hover {
+    background-color: #0056b3;
+}

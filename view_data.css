@@ -1,0 +1,46 @@
+/* Reset default margin and padding for the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Center the content horizontally */
+h1, table {
+    margin: 0 auto;
+}
+
+/* Style the table */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style table headers */
+thead th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style table data rows */
+tbody td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Alternate row background color */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Add a bottom border for each cell except the last one in the row */
+tbody tr td:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}

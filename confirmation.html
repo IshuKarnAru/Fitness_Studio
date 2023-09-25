@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="confirmation.css" />
+  </head>
+  <body>
+    <h1>Booking Confirmation</h1>
+    <p>Booking confirmed for the scheduled date.</p>
+    <p>Thank you for choosing our services!</p>
+
+    <script>
+      // confirmation.js
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // Display a confirmation message
+        alert("Payment confirmed. Thank you for your payment!");
+
+        // Redirect to the payment confirmation page after a short delay (e.g., 3 seconds)
+        setTimeout(function () {
+          window.location.href = "confirmation.html";
+        }, 30000); // Adjust the delay as needed (3 seconds in this example)
+      });
+
+      // Wait for the document to be fully loaded
+      document.addEventListener("DOMContentLoaded", function(event) {
+          // Redirect to the home page after 5 seconds
+          setTimeout(function() {
+              window.location.href = "index.html";
+          }, 5000);
+      });
+    </script>
+  </body>
+</html>
